@@ -10,17 +10,22 @@ import { WebView } from 'react-native-webview';
 
 
 
-
 function App() {
   return (
-    <WebView source={{ uri: 'https://nibaak.ir/' }} />
-    // <SafeAreaView>
-    //   <ScrollView>
-    //     <View>
-    //     </View>
-    //   </ScrollView>
-    // </SafeAreaView>
+    <SafeAreaView style={iframe.responsive}>
+      <WebView source={{ uri: 'https://nibaak.ir' }}
+       allowFileAccess={true}
+       scalesPageToFit={true}
+       originWhitelist={['*']}
+      />
+    </SafeAreaView>
   )
 }
+
+const iframe = StyleSheet.create({
+  responsive : {
+    flex:1,
+  }
+})
 
 export default App
