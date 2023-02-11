@@ -6,19 +6,20 @@ import {
   Text,
   View,
 } from 'react-native';
+import { WebView } from 'react-native-webview';
+
+
 
 
 function App() {
   return (
-    <SafeAreaView>
-      <ScrollView>
-        <View>
-          <Text style={{ color:'red' , textAlign:'center' , fontWeight:'bold' }}>
-            React native
-          </Text>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <WebView source={{ uri: 'https://nibaak.ir/' }} />
+    // <SafeAreaView>
+    //   <ScrollView>
+    //     <View>
+    //     </View>
+    //   </ScrollView>
+    // </SafeAreaView>
   )
 }
 
