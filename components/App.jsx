@@ -13,7 +13,7 @@ import { WebView } from 'react-native-webview';
 function App() {
   return (
     <SafeAreaView style={iframe.responsive}>
-      <WebView source={{ uri: 'https://nibaak.ir' }}
+      <WebView source={{ uri: 'https://ginocode.ir' }}
        allowFileAccess={true}
        scalesPageToFit={true}
        originWhitelist={['*']}
