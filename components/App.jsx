@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import {
   SafeAreaView,
   ScrollView,
@@ -7,10 +7,16 @@ import {
   View,
 } from 'react-native';
 import { WebView } from 'react-native-webview';
+import SplashScreen from "react-native-splash-screen";
 
 
 
 function App() {
+
+  // useEffect(() => {
+  //   SplashScreen.hide()
+  // }, [])
+
   return (
     <SafeAreaView style={iframe.responsive}>
       <WebView source={{ uri: 'https://ginocode.ir' }}
